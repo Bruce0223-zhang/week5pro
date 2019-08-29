@@ -1,0 +1,39 @@
+<html>
+<head>
+    <style>
+        body{
+                    background-color: green;
+                }
+
+
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+ 
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Due Date</td>
+                <td>Description</td>
+                
+            </tr>
+            <% for ( var i =0; i< db.length;i++){ %>
+                <tr>
+                    <td>
+                        <%= db[i].taskName %>
+                    </td>
+                    <td>
+                        <%= db[i].taskDue %>
+                    </td>
+                    <td>
+                        <%= db[i].taskDesc %>
+                    </td>
+                    
+                </tr>
+                <% }%>
+    </h3>
+</body>
+</html>
